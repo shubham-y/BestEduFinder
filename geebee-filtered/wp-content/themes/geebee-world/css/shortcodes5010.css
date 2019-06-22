@@ -1,0 +1,14 @@
+/* Search
+-------------------------------------------------------------- */
+.top-search.show {top: 100%;opacity: 1;z-index: 9999;-webkit-transition: all 0.2s ease-out;-moz-transition: all 0.2s ease-out;-o-transition: all 0.2s ease-out;transition: all 0.2s ease-out;}
+.top-search {position: absolute;width: auto;right: 0;top: 100%;opacity: 0;background: rgba(0,0,0,.9);z-index: -99;-webkit-transition: all 0.2s ease-out;-moz-transition: all 0.2s ease-out;-o-transition: all 0.2s ease-out;transition: all 0.2s ease-out;}
+.top-search form {margin: 15px 0;}
+.top-search .search-form .input-group input[type="search"] {border: none !important;background: transparent !important;font-size: 52px;font-weight: 100;color: #6d6d6d;height: 70px;line-height: 1;padding: 0 0 0 20px;width:100%;margin-bottom: 0;}
+.top-search .search-form .input-group .placeholder {font-size: 52px;}
+.top-search .search-form {position: relative;}
+.show-search a {line-height: 60px;position: relative;}
+.show-search a i:hover {color: #ffffff;}
+.show-search a i {font-size: 18px;color: #333333;}
+.input-group {position: relative;display: table;border-collapse: separate;}
+.top-search button {border: none !important;background: transparent !important;color: #6d6d6d;font-size: 10px;outline: none;-webkit-transition: all 0.2s ease-out;-moz-transition: all 0.2s ease-out;-o-transition: all 0.2s ease-out;transition: all 0.2s ease-out;}
+.top-search .input-group-btn i:hover {color: #fff;-webkit-transition: all 0.2s ease-out;-moz-transition: all 0.2s ease-out;-o-transition: all 0.2s ease-out;transition: all 0.2s ease-out;}

@@ -173,6 +173,13 @@ img.emoji {
 <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1539283865664{margin-right: 0px !important;margin-left: 0px !important;}.vc_custom_1540365114172{padding-top: 0px !important;padding-bottom: 35px !important;}.vc_custom_1538490926827{padding-right: 0px !important;padding-left: 0px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>         
          <link rel="stylesheet" href="../../wp-content/themes/geebee-world/owlcarousel/owl.carousel.min.css">
          <link rel="stylesheet" href="../../wp-content/themes/geebee-world/owlcarousel/owl.theme.default.min.css">
+          <style>
+             label.error {
+         /* remove the next line when you have trouble in IE6 with labels in list */
+                 color: red;
+                 font-style: italic
+             } 
+         </style>
       </head>
       <body class="page-template-default page page-id-148 page-child parent-pageid-147 wpb-js-composer js-comp-ver-5.1.1 vc_responsive" class="header-sticky">
          <div class="boxed">
@@ -758,21 +765,21 @@ var wpdiscuzAjaxObj = {"url":"https:\/\/www.geebeeworld.com\/wp-admin\/admin-aja
 				// })
 
                 var $=jQuery.noConflict();
-                window.onload = function() {
-            if (window.jQuery) {  
-            // jQuery is loaded  
-                alert("Yeah!");
-            } 
-            else {
-            // jQuery is not loaded
-                alert("Doesn't Work");
-            }
-        }
+        //         window.onload = function() {
+        //     if (window.jQuery) {  
+        //     // jQuery is loaded  
+        //         alert("Yeah!");
+        //     } 
+        //     else {
+        //     // jQuery is not loaded
+        //         alert("Doesn't Work");
+        //     }
+        // }
                 $('#viewpdf').on('shown.bs.modal', function(event) {
-                            alert("modal ready");
+                            // alert("modal ready");
                             var button = $(event.relatedTarget);// Button that triggered the modal
                             var button_id = button.data('id');
-                            alert(button_id);
+                            // alert(button_id);
                             $('#viewpdf').data('val', button_id);
                             $('#formpdf').validate({ // initialize the plugin
                                     rules: {
@@ -791,8 +798,8 @@ var wpdiscuzAjaxObj = {"url":"https:\/\/www.geebeeworld.com\/wp-admin\/admin-aja
                                         }
                                     },
                                     submitHandler: function (form) { // for demo
-                                        alert('valid form submitted');
-                                        alert($("#name").val());
+                                        // alert('valid form submitted');
+                                        // alert($("#name").val());
                                         $.ajax({
                                             url: "../contact-process-test.php",
                                             type: 'POST',
@@ -802,12 +809,12 @@ var wpdiscuzAjaxObj = {"url":"https:\/\/www.geebeeworld.com\/wp-admin\/admin-aja
                                                 mobile: $("#mobile").val()
                                             },
                                             success: function(msg) {
-                                                alert('Email Sent');
+                                                // alert('Email Sent');
                                                 pdf_id = $('#viewpdf').data('val');
-                                                alert(pdf_id);
+                                                // alert(pdf_id);
                                                 // alert(button_id);
                                                 link = $(pdf_id).data('href');
-                                                alert(link);
+                                                // alert(link);
                                                 $(pdf_id).attr("target", "_blank");
                                                 $(pdf_id).attr("data-target", "");
                                                 $(pdf_id).attr("data-href", "");

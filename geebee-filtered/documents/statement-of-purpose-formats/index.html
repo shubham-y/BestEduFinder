@@ -819,6 +819,7 @@ var wpdiscuzAjaxObj = {"url":"https:\/\/www.geebeeworld.com\/wp-admin\/admin-aja
                                                 $(pdf_id).attr("data-target", "");
                                                 $(pdf_id).attr("data-href", "");
                                                 $(pdf_id).attr("href", link);
+                                                $('#viewpdf').modal('toggle');
                                                 window.open($(pdf_id).attr("href"), '_blank');
                                                 // $("#text").html("Bye");
                                             }               

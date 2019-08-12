@@ -332,8 +332,8 @@ img.emoji {
 			Get in touch with your nearest GeeBee center by filling out the form			<div class="execphpwidget"><iframe height="550" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" src="https://geebeeccg.wufoo.com/embed/m11i6abd19hd3so/?Field115=www.geebeeworld.com/documents/letter-of-recommendation-formats/"></iframe></div>
 		</div>
 	</div>
-</div></div></div></div></div></div></div></div>
- START : MODEL -->
+</div></div></div></div></div></div></div></div-->
+<!-- START : MODEL -->
 <div id="viewpdf" class="modal fade" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-lg" role="document">
 		   <div class="modal-content">
@@ -816,7 +816,7 @@ $('#viewpdf').on('shown.bs.modal', function(event) {
                         alert('valid form submitted');
                         alert($("#name").val());
                         $.ajax({
-                            url: 'contact-process-test.php',
+                            url: "../contact-process-test.php",
                             type: 'POST',
                             data: {
                                 name: $("#name").val(),

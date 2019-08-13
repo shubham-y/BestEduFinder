@@ -311,6 +311,14 @@ h3:hover {
 <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1539283865664{margin-right: 0px !important;margin-left: 0px !important;}.vc_custom_1540369232920{padding-top: 0px !important;padding-bottom: 35px !important;}.vc_custom_1538490926827{padding-right: 0px !important;padding-left: 0px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>         
          <link rel="stylesheet" href="../../wp-content/themes/geebee-world/owlcarousel/owl.carousel.min.css">
          <link rel="stylesheet" href="../../wp-content/themes/geebee-world/owlcarousel/owl.theme.default.min.css">
+          <style>
+             label.error {
+         /* remove the next line when you have trouble in IE6 with labels in list */
+                 color: red;
+                 font-style: italic
+             } 
+             a.doc:hover { cursor: pointer; }
+         </style>
       </head>
       <body class="page-template-default page page-id-118 page-child parent-pageid-23 wpb-js-composer js-comp-ver-5.1.1 vc_responsive" class="header-sticky">
          <div class="boxed">
@@ -669,10 +677,11 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
         	<i class="fa fa-angle-up"></i>
         </a>
 
-         <script src="../../../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+         <script type="text/javascript" src="../../wp-content/themes/geebee-world/js/jquery.min.js"></script>
+         <script type="text/javascript" src="../../wp-content/themes/geebee-world/js/jquery.validate.js"></script>
 		 <script src="../../wp-content/themes/geebee-world/owlcarousel/owl.carousel.min.js"></script>
          <script type='text/javascript' src='../../wp-content/plugins/widget-google-reviews/static/js/wpac-time544c.js?ver=1.6.9'></script>
-<script type='text/javascript' src='../../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<!-- <script type='text/javascript' src='../../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script> -->
 <script type='text/javascript' src='../../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
 <script type='text/javascript' src='../../wp-content/plugins/collapsing-category-list/js/dropdown5010.js?ver=4.9.8'></script>
 <script type='text/javascript' src='../../wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min26ce.js?ver=5.4.7.4'></script>
@@ -694,87 +703,87 @@ var wpdiscuzAjaxObj = {"url":"https:\/\/www.geebeeworld.com\/wp-admin\/admin-aja
 <script type='text/javascript' src='../../wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min3c21.js?ver=5.1.1'></script>
 		 </div>
 		 <script>
-			 jQuery(document).ready(function($){
-			 	var pageURL = $(location).attr("href");
-			 	var Field115 = $('.wufoo-form-container').attr('src');
-			 	console.log(pageURL);
-			 	console.log("Field115 = "+Field115);
+			 // jQuery(document).ready(function($){
+			 // 	var pageURL = $(location).attr("href");
+			 // 	var Field115 = $('.wufoo-form-container').attr('src');
+			 // 	console.log(pageURL);
+			 // 	console.log("Field115 = "+Field115);
 
-			 	// console.log(Field115);
+			 // 	// console.log(Field115);
 
-				$(".accordion_example2").smk_Accordion({
-				closeAble: true, //boolean
-				});
+				// $(".accordion_example2").smk_Accordion({
+				// closeAble: true, //boolean
+				// });
 
-				});
-				$(".menu-item").on('click', function(){
-					$(this).find('.sub-menu').toggle();
-				})
-				$('.owl-carousel').owlCarousel({
-					navigation : true,
-                    slideSpeed : 300,
-                    paginationSpeed : 400,
-                    pagination: false,
-                    singleItem : false,
-                    items : 3,
-					responsive:{
-						0:{
-							items:1
-						},
-						600:{
-							items:3
-						},
-						1000:{
-							items:3
-						},
-						1200:{
-							items:3
-						}
-					}
-				})
+				// });
+				// $(".menu-item").on('click', function(){
+				// 	$(this).find('.sub-menu').toggle();
+				// })
+				// $('.owl-carousel').owlCarousel({
+				// 	navigation : true,
+    //                 slideSpeed : 300,
+    //                 paginationSpeed : 400,
+    //                 pagination: false,
+    //                 singleItem : false,
+    //                 items : 3,
+				// 	responsive:{
+				// 		0:{
+				// 			items:1
+				// 		},
+				// 		600:{
+				// 			items:3
+				// 		},
+				// 		1000:{
+				// 			items:3
+				// 		},
+				// 		1200:{
+				// 			items:3
+				// 		}
+				// 	}
+				// })
 			 
 			
 
-				$(".newsWidget .australia").click(function(){
-					$(".australia i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
-					$("#australia").toggle();
-				})
-				$(".newsWidget .canada").click(function(){
-					$(".canada i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
-					$("#canada").toggle();
-				})
-				$(".newsWidget .dubai").click(function(){
-					$(".dubai i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
-					$("#dubai").toggle();
-				})
-				$(".newsWidget .new-zealand").click(function(){
-					$(".new-zealand i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
-					$("#new-zealand").toggle();
-				})
-				/*$(".newsWidget .other-countries").click(function(){
-					$(".other-countries i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
-					$("#other-countries").toggle();
-				})*/
-				$(".newsWidget .singapore").click(function(){
-					$(".singapore i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
-					$("#singapore").toggle();
-				})
-				$(".newsWidget .spain").click(function(){
-					$(".spain i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
-					$("#spain").toggle();
-				})
-				$(".newsWidget .uk").click(function(){
-					$(".uk i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
-					$("#uk").toggle();
-				})
-				$(".newsWidget .usa").click(function(){
-					$(".usa i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
-					$("#usa").toggle();
-				})
-				$(".newsWidget .visa").click(function(){
-					$(".visa i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
-					$("#visa").toggle();
-				})
+				// $(".newsWidget .australia").click(function(){
+				// 	$(".australia i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
+				// 	$("#australia").toggle();
+				// })
+				// $(".newsWidget .canada").click(function(){
+				// 	$(".canada i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
+				// 	$("#canada").toggle();
+				// })
+				// $(".newsWidget .dubai").click(function(){
+				// 	$(".dubai i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
+				// 	$("#dubai").toggle();
+				// })
+				// $(".newsWidget .new-zealand").click(function(){
+				// 	$(".new-zealand i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
+				// 	$("#new-zealand").toggle();
+				// })
+				// /*$(".newsWidget .other-countries").click(function(){
+				// 	$(".other-countries i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
+				// 	$("#other-countries").toggle();
+				// })*/
+				// $(".newsWidget .singapore").click(function(){
+				// 	$(".singapore i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
+				// 	$("#singapore").toggle();
+				// })
+				// $(".newsWidget .spain").click(function(){
+				// 	$(".spain i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
+				// 	$("#spain").toggle();
+				// })
+				// $(".newsWidget .uk").click(function(){
+				// 	$(".uk i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
+				// 	$("#uk").toggle();
+				// })
+				// $(".newsWidget .usa").click(function(){
+				// 	$(".usa i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
+				// 	$("#usa").toggle();
+				// })
+				// $(".newsWidget .visa").click(function(){
+				// 	$(".visa i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
+				// 	$("#visa").toggle();
+				// })
 				var $=jQuery.noConflict();
         //         window.onload = function() {
         //     if (window.jQuery) {  

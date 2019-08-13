@@ -301,9 +301,9 @@ img.emoji {
 	<div class="wpb_text_column wpb_content_element  docPage" >
 		<div class="wpb_wrapper">
 			<ul>
-<li><strong><a href="../../PDF/cvpdf.pdf" target="_blank" rel="noopener">Resume of Bachelor's Applicant</a></strong><a href="../../PDF/Resume_Commerce.pdf" target="_blank" rel="noopener">:</a>This Resume is for the student who has completed his undergraduation in Commerce stream and has work experience in Corporate Portfolio Management.</li>
-<li><a href="../../PDF/Resume_Electrical.pdf" target="_blank" rel="noopener"><strong>Resume of Electrical Engineering Student</strong>:</a> This Resume is for the student who has completed his undergraduation in Electrical Engineering and has good academic records.</li>
-<li><a href="../../PDF/Resume_Mechanical.pdf" target="_blank" rel="noopener"><strong>Resume of Mechanical Engineering Student</strong>:</a> This Resume is for the student who has completed his undergraduation in Mechanical Engineering and has work experience in Marketing, Project Management and Finance.</li>
+<li><strong><a class="doc" id="pdf2" data-id="#pdf2" data-toggle="modal" data-target="#viewpdf" rel="noopener" data-href="../../PDF/cvpdf.pdf" target="_blank" rel="noopener">Resume of Bachelor's Applicant</a></strong><a href="../../PDF/Resume_Commerce.pdf" target="_blank" rel="noopener">:</a>This Resume is for the student who has completed his undergraduation in Commerce stream and has work experience in Corporate Portfolio Management.</li>
+<li><a class="doc" id="pdf2" data-id="#pdf2" data-toggle="modal" data-target="#viewpdf" rel="noopener" data-href="../../PDF/Resume_Electrical.pdf" target="_blank" rel="noopener"><strong>Resume of Electrical Engineering Student</strong>:</a> This Resume is for the student who has completed his undergraduation in Electrical Engineering and has good academic records.</li>
+<li><a class="doc" id="pdf2" data-id="#pdf2" data-toggle="modal" data-target="#viewpdf" rel="noopener" data-href="../../PDF/Resume_Mechanical.pdf" target="_blank" rel="noopener"><strong>Resume of Mechanical Engineering Student</strong>:</a> This Resume is for the student who has completed his undergraduation in Mechanical Engineering and has work experience in Marketing, Project Management and Finance.</li>
 </ul>
 
 		</div>
@@ -321,6 +321,55 @@ img.emoji {
 
 </div></div></div></div></div>
 <!--</section>-->
+
+<div id="viewpdf" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-lg" role="document">
+	   <div class="modal-content">
+		  <div class="modal-header">
+			 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+			 <h4 class="tmodal-title text-center">Enter details to access document</h4>
+		  </div>
+		  <div class="modal-body">
+			 <div class="row">
+				<div class="col-md-5 text-center">
+				   <img src="../../wp-content/uploads/bef-logo.jpg" class="" height="250" width="300"> 
+				</div>
+				<div class="col-md-7">
+				   <form method="post" action="#"  id="formpdf">
+					  <input type="hidden" name="action" value="add">
+					  <input type="hidden" name="type" value="reference document lead">
+					  <div class="row">
+						 <div class="col-md-12 col-sm-12">
+							<div class="form-group">
+							   <label class="control-label">Name</label>
+							   <input type="text" placeholder="Name" class="form-control" id="name" name="name" value="" >
+							</div>
+						 </div>
+						 <div class="col-md-12 col-sm-12">
+							<div class="form-group">
+							   <label class="control-label">Email</label>
+							   <input type="email" placeholder="Email" class="form-control" id="email" name="email" value="" >
+							</div>
+						 </div>
+						 <div class="col-md-12 col-sm-12">
+							<div class="form-group">
+							   <label class="control-label">Mobile No</label>
+							   <input type="text" placeholder="Mobile No" class="form-control" id="mobile" name="mobile" value="">
+							</div>
+						 </div>
+						 <button id="submit" type="submit" class="btn btn-primary text-weight-700 text-uppercase" >Submit</button>
+					  </div>
+					  
+				   </form>
+				</div>
+			 </div>
+		  </div>
+		  
+	   </div>
+	</div>
+ </div>
+
+
 <footer>
 		
 		<div class="container">
@@ -679,7 +728,61 @@ var wpdiscuzAjaxObj = {"url":"https:\/\/www.geebeeworld.com\/wp-admin\/admin-aja
 					$(".visa i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
 					$("#visa").toggle();
 				})
+				var $=jQuery.noConflict();
+                $('#viewpdf').on('shown.bs.modal', function(event) {
+                            // alert("modal ready");
+                            var button = $(event.relatedTarget);// Button that triggered the modal
+                            var button_id = button.data('id');
+                            // alert(button_id);
+                            $('#viewpdf').data('val', button_id);
+                            $('#formpdf').validate({ // initialize the plugin
+                                    rules: {
+                                        name: {
+                                            required: true,
+                                            minlength: 2
+                                        },
+                                        email: {
+                                            required: true,
+                                            email: true
+                                        },
+                                        mobile: {
+                                            required: true,
+                                            number: true,
+                                            minlength: 10
+                                        }
+                                    },
+                                    submitHandler: function (form) { // for demo
+                                        // alert('valid form submitted');
+                                        // alert($("#name").val());
+                                        $.ajax({
+                                            url: "../contact-process-test.php",
+                                            type: 'POST',
+                                            data: {
+                                                name: $("#name").val(),
+                                                email: $("#email").val(),
+                                                mobile: $("#mobile").val()
+                                            },
+                                            success: function(msg) {
+                                                // alert('Email Sent');
+                                                pdf_id = $('#viewpdf').data('val');
+                                                // alert(pdf_id);
+                                                // alert(button_id);
+                                                link = $(pdf_id).data('href');
+                                                // alert(link);
+                                                $(pdf_id).attr("target", "_blank");
+                                                $(pdf_id).attr("data-target", "");
+                                                $(pdf_id).attr("data-href", "");
+                                                $(pdf_id).attr("href", link);
+                                                $('#viewpdf').modal('toggle');
+                                                window.open($(pdf_id).attr("href"), '_blank');
+                                                // $("#text").html("Bye");
+                                            }               
+                                        }); // for demo
+                                        return false; // for demo
+                                    }
+                            })
 
+                        });
                 
 		 </script>
       </body>

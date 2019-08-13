@@ -55,6 +55,28 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
+
+h3
+{
+	position: relative;
+    -webkit-animation: mymove 3s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 3s infinite;
+}
+
+h3:hover {
+  -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
+  animation-play-state: paused;
+}
+
+@-webkit-keyframes mymove {
+  from {left: 900px;}
+  to {left: 110000px;}
+}
+
+@keyframes mymove {
+  from {left: 900px;}
+  to {left: 110000px;}
+}
 </style>
 <link rel='stylesheet' id='grw_css-css'  href='../../wp-content/plugins/widget-google-reviews/static/css/google-review544c.css?ver=1.6.9' type='text/css' media='all' />
 <link rel='stylesheet' id='collapscatlist_css-css'  href='../../wp-content/plugins/collapsing-category-list/collapsing-category-list5010.css?ver=4.9.8' type='text/css' media='all' />
@@ -301,23 +323,15 @@ img.emoji {
 	<div class="wpb_text_column wpb_content_element  docPage" >
 		<div class="wpb_wrapper">
 			<ul>
-<li><strong><a class="doc" id="pdf2" data-id="#pdf2" data-toggle="modal" data-target="#viewpdf" rel="noopener" data-href="../../PDF/cvpdf.pdf" target="_blank" rel="noopener">Resume of Bachelor's Applicant</a></strong><a href="../../PDF/Resume_Commerce.pdf" target="_blank" rel="noopener">:</a>This Resume is for the student who has completed his undergraduation in Commerce stream and has work experience in Corporate Portfolio Management.</li>
-<li><a class="doc" id="pdf2" data-id="#pdf2" data-toggle="modal" data-target="#viewpdf" rel="noopener" data-href="../../PDF/Resume_Electrical.pdf" target="_blank" rel="noopener"><strong>Resume of Electrical Engineering Student</strong>:</a> This Resume is for the student who has completed his undergraduation in Electrical Engineering and has good academic records.</li>
-<li><a class="doc" id="pdf2" data-id="#pdf2" data-toggle="modal" data-target="#viewpdf" rel="noopener" data-href="../../PDF/Resume_Mechanical.pdf" target="_blank" rel="noopener"><strong>Resume of Mechanical Engineering Student</strong>:</a> This Resume is for the student who has completed his undergraduation in Mechanical Engineering and has work experience in Marketing, Project Management and Finance.</li>
+<li><a class="doc" id="pdf1" data-id="#pdf1" data-toggle="modal" data-target="#viewpdf" rel="noopener" data-href="../../PDF/reco_mbbs.pdf" ><strong>Resume of Bachelor's Applicant</strong></a> :This Resume is for the student who has completed his undergraduation in Commerce stream and has work experience in Corporate Portfolio Management.</li>
+<li><a class="doc" id="pdf2" data-id="#pdf2" data-toggle="modal" data-target="#viewpdf" rel="noopener" data-href="../../PDF/grad_applicant.jpg" ><strong>Resume of Graduate applicant</strong>:</a> This Resume is for the student who has completed his undergraduation in Electrical Engineering and has good academic records.</li>
+<li><a class="doc" id="pdf3" data-id="#pdf3" data-toggle="modal" data-target="#viewpdf" rel="noopener" data-href="../../PDF/pg_applicant.png" ><strong>Resume of PhD applicant</strong>:</a> This Resume is for the student who has completed his undergraduation in Mechanical Engineering and has work experience in Marketing, Project Management and Finance.</li>
 </ul>
 
 		</div>
 	</div>
 </div></div></div>
-<!--
-<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper"><div  class="wpb_widgetised_column wpb_content_element form-bg">
-		
-	<div class="wpb_wrapper">
-			
-			Get in touch with your nearest GeeBee center by filling out the form			<div class="execphpwidget"><iframe height="550" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" src="https://geebeeccg.wufoo.com/embed/m11i6abd19hd3so/?Field115=www.geebeeworld.com/documents/resume-formats/"></iframe></div>
-		</div> 
-	</div>
-</div></div></div>-->
+
 
 </div></div></div></div></div>
 <!--</section>-->
@@ -647,6 +661,8 @@ var wpdiscuzAjaxObj = {"url":"https:\/\/www.geebeeworld.com\/wp-admin\/admin-aja
 <script type='text/javascript' src='../../wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min3c21.js?ver=5.1.1'></script>
 		 </div>
 		 <script>
+
+			 /*
 			 jQuery(document).ready(function($){
 			 	var pageURL = $(location).attr("href");
 			 	var Field115 = $('.wufoo-form-container').attr('src');
@@ -699,35 +715,35 @@ var wpdiscuzAjaxObj = {"url":"https:\/\/www.geebeeworld.com\/wp-admin\/admin-aja
 				$(".newsWidget .dubai").click(function(){
 					$(".dubai i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
 					$("#dubai").toggle();
-				})
-				$(".newsWidget .new-zealand").click(function(){
-					$(".new-zealand i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
-					$("#new-zealand").toggle();
-				})
-				/*$(".newsWidget .other-countries").click(function(){
-					$(".other-countries i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
-					$("#other-countries").toggle();
-				})*/
-				$(".newsWidget .singapore").click(function(){
-					$(".singapore i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
-					$("#singapore").toggle();
-				})
-				$(".newsWidget .spain").click(function(){
-					$(".spain i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
-					$("#spain").toggle();
-				})
-				$(".newsWidget .uk").click(function(){
-					$(".uk i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
-					$("#uk").toggle();
-				})
-				$(".newsWidget .usa").click(function(){
-					$(".usa i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
-					$("#usa").toggle();
-				})
-				$(".newsWidget .visa").click(function(){
-					$(".visa i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
-					$("#visa").toggle();
-				})
+				}) */
+//				$(".newsWidget .new-zealand").click(function(){
+//					$(".new-zealand i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
+//					$("#new-zealand").toggle();
+//				})
+//				/*$(".newsWidget .other-countries").click(function(){
+//					$(".other-countries i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
+//					$("#other-countries").toggle();
+//				})*/
+//				$(".newsWidget .singapore").click(function(){
+//					$(".singapore i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
+//					$("#singapore").toggle();
+//				})
+//				$(".newsWidget .spain").click(function(){
+//					$(".spain i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
+//					$("#spain").toggle();
+//				})
+//				$(".newsWidget .uk").click(function(){
+//					$(".uk i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
+//					$("#uk").toggle();
+//				})
+//				$(".newsWidget .usa").click(function(){
+//					$(".usa i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
+//					$("#usa").toggle();
+//				})
+//				$(".newsWidget .visa").click(function(){
+//					$(".visa i").toggleClass("fa fa-arrow-circle-o-right fa fa-arrow-circle-o-down");
+//					$("#visa").toggle();
+//				})
 				var $=jQuery.noConflict();
                 $('#viewpdf').on('shown.bs.modal', function(event) {
                             // alert("modal ready");

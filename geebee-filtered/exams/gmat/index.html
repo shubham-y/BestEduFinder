@@ -308,11 +308,11 @@ img.emoji {
 			<div class="wpb_text_column wpb_content_element  docPage" >
 					<div class="wpb_wrapper">
 					<ul>
-				<!----<li><strong><a style="color: red" href="../../PDF/reco_grad-BTech_e%26c.pdf" target="_blank" rel="noopener"><i>Why Take GMAT Exam? &nbsp;:</i></a></strong> If you are serious about business school, take the GMAT exam. Schools know that if you take the GMAT exam, you are serious about earning a graduate business degree. They also know it’s a proven predictor of your ability to succeed in your chosen program.</li>-->
-				<li><strong><a style="color: red" href="../../PDF/reco_electrical_computer.pdf" target="_blank" rel="noopener"><i>Quantitative Questions&nbsp;:</i></strong></a> This section will test your ability to solve numerical & data-related problems. The questions familiar with the maths topics such as basic arithmetic, geometry, algebra & word problems.</li>
-				<li><strong><a style="color: red" href="../../PDF/reco_grad-BTech_e%26c.pdf" target="_blank" rel="noopener"><i>Integrated Reasoning (IR)&nbsp;:</i></a></strong> In an increasingly data-driven business environment, you will be faced with the need to make decisions based on information from multiple resources.</li>
-				<li><strong><a style="color: red" href="../../PDF/reco_ms_chemical.pdf" target="_blank" rel="noopener"><i> Verbal&nbsp;:</i></a></strong>The verbal/ English will require you to be well-versed in the following areas: Pronouns, Parallelism, Subject-Verb Agreement, Diction, Grammatical Construction, Idioms, Logical Predication, Verb Tense, Misplaced Modifiers etc.</li>
-				<li><strong><a style="color: red" href="../../PDF/reco_ms_computerscience_workCEO.pdf" target="_blank" rel="noopener"><i>Analytical Writing Assessment(AWA)&nbsp;:</i></a></strong> There will be just 1 topic to tackle in this section. Analytical Writing Assessment (AWA) requires you to analyze the logic behind a given argument and then write an essay explaining the argument.</li>
+				<!----<li><strong><a style="color: red" href="../../PDF/reco_grad-BTech_e%26c.pdf"  ><i>Why Take GMAT Exam? &nbsp;:</i></a></strong> If you are serious about business school, take the GMAT exam. Schools know that if you take the GMAT exam, you are serious about earning a graduate business degree. They also know it’s a proven predictor of your ability to succeed in your chosen program.</li>-->
+				<li><strong><a class="doc" id="pdf1" data-id="#pdf1" data-toggle="modal" data-target="#viewpdf" rel="noopener" style="color: red" data-href="../../PDF/reco_electrical_computer.pdf"  ><i>Quantitative Questions&nbsp;:</i></strong></a> This section will test your ability to solve numerical & data-related problems. The questions familiar with the maths topics such as basic arithmetic, geometry, algebra & word problems.</li>
+				<li><strong><a class="doc" id="pdf1" data-id="#pdf1" data-toggle="modal" data-target="#viewpdf" rel="noopener" style="color: red" data-href="../../PDF/reco_grad-BTech_e%26c.pdf"  ><i>Integrated Reasoning (IR)&nbsp;:</i></a></strong> In an increasingly data-driven business environment, you will be faced with the need to make decisions based on information from multiple resources.</li>
+				<li><strong><a class="doc" id="pdf1" data-id="#pdf1" data-toggle="modal" data-target="#viewpdf" rel="noopener" style="color: red" data-href="../../PDF/reco_ms_chemical.pdf"  ><i> Verbal&nbsp;:</i></a></strong>The verbal/ English will require you to be well-versed in the following areas: Pronouns, Parallelism, Subject-Verb Agreement, Diction, Grammatical Construction, Idioms, Logical Predication, Verb Tense, Misplaced Modifiers etc.</li>
+				<li><strong><a class="doc" id="pdf1" data-id="#pdf1" data-toggle="modal" data-target="#viewpdf" rel="noopener" style="color: red" data-href="../../PDF/reco_ms_computerscience_workCEO.pdf"  ><i>Analytical Writing Assessment(AWA)&nbsp;:</i></a></strong> There will be just 1 topic to tackle in this section. Analytical Writing Assessment (AWA) requires you to analyze the logic behind a given argument and then write an essay explaining the argument.</li>
 
 			</ul>
 
@@ -468,6 +468,54 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 </div>
 <!--</section>-->
 
+<div id="viewpdf" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-lg" role="document">
+	   <div class="modal-content">
+		  <div class="modal-header">
+			 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+			 <h4 class="tmodal-title text-center">Enter details to access document</h4>
+		  </div>
+		  <div class="modal-body">
+			 <div class="row">
+				<div class="col-md-5 text-center">
+				   <img src="../../wp-content/uploads/bef-logo.jpg" class="" height="250" width="300"> 
+				</div>
+				<div class="col-md-7">
+				   <form method="post" action="#"  id="formpdf">
+					  <input type="hidden" name="action" value="add">
+					  <input type="hidden" name="type" value="reference document lead">
+					  <div class="row">
+						 <div class="col-md-12 col-sm-12">
+							<div class="form-group">
+							   <label class="control-label">Name</label>
+							   <input type="text" placeholder="Name" class="form-control" id="name" name="name" value="" >
+							</div>
+						 </div>
+						 <div class="col-md-12 col-sm-12">
+							<div class="form-group">
+							   <label class="control-label">Email</label>
+							   <input type="email" placeholder="Email" class="form-control" id="email" name="email" value="" >
+							</div>
+						 </div>
+						 <div class="col-md-12 col-sm-12">
+							<div class="form-group">
+							   <label class="control-label">Mobile No</label>
+							   <input type="text" placeholder="Mobile No" class="form-control" id="mobile" name="mobile" value="">
+							</div>
+						 </div>
+						 <button id="submit" type="submit" class="btn btn-primary text-weight-700 text-uppercase" >Submit</button>
+					  </div>
+					  
+				   </form>
+				</div>
+			 </div>
+		  </div>
+		  
+	   </div>
+	</div>
+ </div>
+
+
 <footer>
 <div class="container">
 		<div class="col-md-12 hidden-xs hidden-sm">
@@ -574,119 +622,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-208"><a href="../../documents/other-formats/index.html">Others</a></li>
 </ul></div></div></div>
 
-<!--
-<div><div class="acc_head"><div class="acc_icon_expand"></div>FAQs</div><div class="acc_content"><div class="menu-footer-menu-6-container"><ul id="menu-footer-menu-12" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231"><a href="faqs/australia/index.html">Australia</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-230"><a href="faqs/canada/index.html">Canada</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-229"><a href="faqs/new-zealand/index.html">New Zealand</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-228"><a href="faqs/uk/index.html">UK</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-227"><a href="faqs/usa/index.html">USA</a></li>
-</ul></div></div></div><div>
--->
-<!-- Geebee centers begin-->	
-<!--
-<div class="acc_head"><div class="acc_icon_expand"></div>GeeBee Centers</div><div class="acc_content"><div class="menu-geebee-centers-container"><ul id="menu-geebee-centers" class="menu"><li id="menu-item-41443" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-41443"><a>Maharashtra :</a>
-<ul class="sub-menu">
-<li id="menu-item-41444" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41444"><a href="about-geebee/contact_us/index.html#churchgate">Churchgate</a></li>
-<li id="menu-item-41445" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41445"><a href="about-geebee/contact_us/index.html#maharashtra">Andheri</a></li>
-<li id="menu-item-41446" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41446"><a href="about-geebee/contact_us/index.html#maharashtra">Borivali</a></li>
-<li id="menu-item-41447" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41447"><a href="about-geebee/contact_us/index.html#maharashtra">Thane</a></li>
-<li id="menu-item-41448" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41448"><a href="about-geebee/contact_us/index.html#maharashtra">Pune</a></li>
-<li id="menu-item-41449" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41449"><a href="about-geebee/contact_us/index.html#maharashtra">Nagpur</a></li>
-</ul>
-</li>
-<li id="menu-item-41450" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-41450"><a>Punjab :</a>
-<ul class="sub-menu">
-<li id="menu-item-41451" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41451"><a href="about-geebee/contact_us/index.html#punjab">Ludhiana</a></li>
-<li id="menu-item-41452" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41452"><a href="about-geebee/contact_us/index.html#punjab">Moga</a></li>
-<li id="menu-item-41453" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41453"><a href="about-geebee/contact_us/index.html#punjab">Patiala</a></li>
-<li id="menu-item-41454" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41454"><a href="about-geebee/contact_us/index.html#punjab">Dasuya</a></li>
-<li id="menu-item-41455" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41455"><a href="about-geebee/contact_us/index.html#punjab">Tanda</a></li>
-</ul>
-</li>
-<li id="menu-item-41456" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-41456"><a>Kerala :</a>
-<ul class="sub-menu">
-<li id="menu-item-41457" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41457"><a href="about-geebee/contact_us/index.html#kerala">Kottayam</a></li>
-<li id="menu-item-41458" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41458"><a href="about-geebee/contact_us/index.html#kerala">Thiruvananthapuram</a></li>
-<li id="menu-item-41459" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41459"><a href="about-geebee/contact_us/index.html#kerala">Mavelikkara</a></li>
-<li id="menu-item-41460" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41460"><a href="about-geebee/contact_us/index.html#kerala">Pala</a></li>
-<li id="menu-item-41461" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41461"><a href="about-geebee/contact_us/index.html#kerala">Kochi</a></li>
-<li id="menu-item-41462" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41462"><a href="about-geebee/contact_us/index.html#kerala">Angamaly</a></li>
-<li id="menu-item-41463" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41463"><a href="about-geebee/contact_us/index.html#kerala">Kannur</a></li>
-<li id="menu-item-41464" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41464"><a href="about-geebee/contact_us/index.html#kerala">Kollam</a></li>
-<li id="menu-item-41465" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41465"><a href="about-geebee/contact_us/index.html#kerala">Thrissur</a></li>
-<li id="menu-item-41466" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41466"><a href="about-geebee/contact_us/index.html#kerala">Kozhikode</a></li>
-<li id="menu-item-41473" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41473"><a href="about-geebee/contact_us/index.html#kerala">Thodupuzha</a></li>
-</ul>
-</li>
-<li id="menu-item-41467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-41467"><a>Others :</a>
-<ul class="sub-menu">
-<li id="menu-item-41468" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41468"><a href="about-geebee/contact_us/index.html#goa">Goa</a></li>
-<li id="menu-item-41469" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41469"><a href="about-geebee/contact_us/index.html#gujarat">Surat</a></li>
-<li id="menu-item-41470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41470"><a href="about-geebee/contact_us/index.html#madhya-pradesh">Bhopal</a></li>
-<li id="menu-item-41471" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41471"><a href="about-geebee/contact_us/index.html#uttar-pradesh">Noida</a></li>
-<li id="menu-item-41472" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41472"><a href="about-geebee/contact_us/index.html#uttar-pradesh">Ghaziabad</a></li>
-</ul>
-</li>
-</ul></div></div></div>			</div>
-
-		<div class="col-md-12 hidden-xs hidden-sm">
-			 <div class="geebee-centers"> 
-			 
-				<h3>GeeBee Centers</h3>
-				<p><span>Maharashtra : </span> <a href="#">Churchgate</a> , <a href="#">Andheri</a> , <a href="#">Borivali</a> , <a href="#">Thane</a> , <a href="#">Pune</a> , <a href="#">Nagpur</a></p>
-				<p><span>Punjab : </span> <a href="#">Ludhiana</a> , <a href="#">Moga</a> , <a href="#">Patiala</a> , <a href="#">Dasuya</a> , <a href="#">Tanda</a></p>
-				<p><span>Kerala : </span> <a href="#">Kottayam</a> , <a href="#">Thiruvananthapuram</a> , <a href="#">Mavelikkara</a> , <a href="#">Pala</a> , <a href="#">Kochi</a> , <a href="#">Angamaly</a> , <a href="#">Kannur</a> , <a href="#">Kollam</a> , <a href="#">Thrissur</a> , <a href="#">Kozhikode</a></p>
-				<p><span>Others : </span> <a href="#">Goa</a> , <a href="#">Surat</a> , <a href="#">Bhopal</a> , <a href="#">Noida</a> , <a href="#">Ghaziabad</a></p>
-				
-			</div> 
-			<div class="geebee-centers">
-				<div class="col-md-12 col-sm-12"><div class="widget"><h2 class="title">GeeBee Centers</h2><div class="menu-geebee-centers-container"><ul id="menu-geebee-centers-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-41443"><a>Maharashtra :</a>
-<ul class="sub-menu">
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41444"><a href="about-geebee/contact_us/index.html#churchgate">Churchgate</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41445"><a href="about-geebee/contact_us/index.html#maharashtra">Andheri</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41446"><a href="about-geebee/contact_us/index.html#maharashtra">Borivali</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41447"><a href="about-geebee/contact_us/index.html#maharashtra">Thane</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41448"><a href="about-geebee/contact_us/index.html#maharashtra">Pune</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41449"><a href="about-geebee/contact_us/index.html#maharashtra">Nagpur</a></li>
-</ul>
-</li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-41450"><a>Punjab :</a>
-<ul class="sub-menu">
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41451"><a href="about-geebee/contact_us/index.html#punjab">Ludhiana</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41452"><a href="about-geebee/contact_us/index.html#punjab">Moga</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41453"><a href="about-geebee/contact_us/index.html#punjab">Patiala</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41454"><a href="about-geebee/contact_us/index.html#punjab">Dasuya</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41455"><a href="about-geebee/contact_us/index.html#punjab">Tanda</a></li>
-</ul>
-</li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-41456"><a>Kerala :</a>
-<ul class="sub-menu">
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41457"><a href="about-geebee/contact_us/index.html#kerala">Kottayam</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41458"><a href="about-geebee/contact_us/index.html#kerala">Thiruvananthapuram</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41459"><a href="about-geebee/contact_us/index.html#kerala">Mavelikkara</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41460"><a href="about-geebee/contact_us/index.html#kerala">Pala</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41461"><a href="about-geebee/contact_us/index.html#kerala">Kochi</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41462"><a href="about-geebee/contact_us/index.html#kerala">Angamaly</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41463"><a href="about-geebee/contact_us/index.html#kerala">Kannur</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41464"><a href="about-geebee/contact_us/index.html#kerala">Kollam</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41465"><a href="about-geebee/contact_us/index.html#kerala">Thrissur</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41466"><a href="about-geebee/contact_us/index.html#kerala">Kozhikode</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41473"><a href="about-geebee/contact_us/index.html#kerala">Thodupuzha</a></li>
-</ul>
-</li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-41467"><a>Others :</a>
-<ul class="sub-menu">
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41468"><a href="about-geebee/contact_us/index.html#goa">Goa</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41469"><a href="about-geebee/contact_us/index.html#gujarat">Surat</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41470"><a href="about-geebee/contact_us/index.html#madhya-pradesh">Bhopal</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41471"><a href="about-geebee/contact_us/index.html#uttar-pradesh">Noida</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41472"><a href="about-geebee/contact_us/index.html#uttar-pradesh">Ghaziabad</a></li>
-</ul>
-</li>
-</ul> 
-</div>
-</div>
-</div>	-->	
 <!-- centers end-->	
 <div class="clearfix"></div>
 			</div>
@@ -829,6 +764,7 @@ var wpdiscuzAjaxObj = {"url":"https:\/\/www.geebeeworld.com\/wp-admin\/admin-aja
 					$("#visa").toggle();
 				})
 
+				
                 
 		 </script>
       </body>

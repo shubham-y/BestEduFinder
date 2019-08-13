@@ -735,7 +735,74 @@ var wpdiscuzAjaxObj = {"url":"https:\/\/www.geebeeworld.com\/wp-admin\/admin-aja
 					$("#visa").toggle();
 				})
 
-                
+			   
+				var $=jQuery.noConflict();
+        //         window.onload = function() {
+        //     if (window.jQuery) {  
+        //     // jQuery is loaded  
+        //         alert("Yeah!");
+        //     } 
+        //     else {
+        //     // jQuery is not loaded
+        //         alert("Doesn't Work");
+        //     }
+        // }
+                $('#viewpdf').on('shown.bs.modal', function(event) {
+                            // alert("modal ready");
+                            var button = $(event.relatedTarget);// Button that triggered the modal
+                            var button_id = button.data('id');
+                            // alert(button_id);
+                            $('#viewpdf').data('val', button_id);
+                            $('#formpdf').validate({ // initialize the plugin
+                                    rules: {
+                                        name: {
+                                            required: true,
+                                            minlength: 2
+                                        },
+                                        email: {
+                                            required: true,
+                                            email: true
+                                        },
+                                        mobile: {
+                                            required: true,
+                                            number: true,
+                                            minlength: 10
+                                        }
+                                    },
+                                    submitHandler: function (form) { // for demo
+                                        // alert('valid form submitted');
+                                        // alert($("#name").val());
+                                        $.ajax({
+                                            url: "../contact-process-test.php",
+                                            type: 'POST',
+                                            data: {
+                                                name: $("#name").val(),
+                                                email: $("#email").val(),
+                                                mobile: $("#mobile").val()
+                                            },
+                                            success: function(msg) {
+                                                // alert('Email Sent');
+                                                pdf_id = $('#viewpdf').data('val');
+                                                // alert(pdf_id);
+                                                // alert(button_id);
+                                                link = $(pdf_id).data('href');
+                                                // alert(link);
+                                                $(pdf_id).attr("target", "_blank");
+                                                $(pdf_id).attr("data-target", "");
+                                                $(pdf_id).attr("data-href", "");
+                                                $(pdf_id).attr("href", link);
+                                                $('#viewpdf').modal('toggle');
+                                                window.open($(pdf_id).attr("href"), '_blank');
+                                                // $("#text").html("Bye");
+                                            }               
+                                        }); // for demo
+                                        return false; // for demo
+                                    }
+                            })
+
+                        });
+
+
 		 </script>
       </body>
    

@@ -18,7 +18,7 @@
          <meta name="author" content="Mark Web Solutions">
          <!-- Mobile Specific Metas -->
          <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
-         <link href="../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+         <!-- <link href="../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
 
          <link href="#" rel="shortcut icon">
          <!--[if lt IE 9]>
@@ -178,6 +178,14 @@ img.emoji {
 <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1540993876489{margin-right: 0px !important;margin-left: 0px !important;padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1550663874466{margin-right: 0px !important;margin-left: 0px !important;}.vc_custom_1550663929948{margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1538372854489{margin-right: 0px !important;margin-left: 0px !important;}.vc_custom_1551179187894{margin-right: 0px !important;margin-left: 0px !important;background-position: center;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1536921031514{margin-right: 0px !important;margin-left: 0px !important;}.vc_custom_1551516256341{margin-right: 0px !important;margin-left: 0px !important;background-color: #eeeeee !important;}.vc_custom_1550669627534{margin-right: 0px !important;margin-left: 0px !important;padding-top: 15px !important;padding-bottom: 50px !important;}.vc_custom_1540993871655{padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1550661220625{padding-top: 5px !important;padding-bottom: 5px !important;}.vc_custom_1532680816852{padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1536907250812{padding-top: 35px !important;padding-bottom: 35px !important;}.vc_custom_1550663017360{padding-top: 30px !important;padding-right: 15px !important;padding-bottom: 30px !important;padding-left: 15px !important;background-color: #ffffff !important;}.vc_custom_1550663130851{padding-top: 0px !important;padding-right: 25px !important;padding-bottom: 0px !important;padding-left: 25px !important;}.vc_custom_1550662425601{border-bottom-width: 0px !important;padding-top: 0px !important;padding-right: 15px !important;padding-left: 15px !important;}.vc_custom_1551179007048{padding-top: 0px !important;}.vc_custom_1550662028967{padding-top: 0px !important;}.vc_custom_1550663612120{padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1550663588885{padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1536907250812{padding-top: 35px !important;padding-bottom: 35px !important;}.vc_custom_1532680816852{padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1550667923396{padding-top: 5px !important;padding-bottom: 35px !important;}.vc_custom_1532680816852{padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1532680816852{padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1536907250812{padding-top: 35px !important;padding-bottom: 35px !important;}.vc_custom_1532680816852{padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1550671259783{padding-top: 5px !important;padding-bottom: 35px !important;}.vc_custom_1532680816852{padding-right: 0px !important;padding-left: 0px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>         
          <link rel="stylesheet" href="wp-content/themes/geebee-world/owlcarousel/owl.carousel.min.css">
          <link rel="stylesheet" href="wp-content/themes/geebee-world/owlcarousel/owl.theme.default.min.css">
+         <style>
+            label.error {
+        /* remove the next line when you have trouble in IE6 with labels in list */
+                color: red;
+                font-style: italic
+            } 
+            a.doc:hover { cursor: pointer; }
+        </style>
       </head>
       <body class="home page-template-default page page-id-9 wpb-js-composer js-comp-ver-5.1.1 vc_responsive" class="header-sticky">
          <div class="boxed">
@@ -590,6 +598,53 @@ gtag('config', 'AW-1028772118');
 
 
 </div></div></div></div></div>
+<!-- START : MODEL -->
+<div id="viewpdf" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+       <div class="modal-content">
+          <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+             <h4 class="tmodal-title text-center">Enter details to access document</h4>
+          </div>
+          <div class="modal-body">
+             <div class="row">
+                <div class="col-md-5 text-center">
+                   <img src="wp-content/uploads/bef-logo.jpg" class="" height="250" width="300"> 
+                </div>
+                <div class="col-md-7">
+                   <form method="post" action="#"  id="formpdf">
+                      <input type="hidden" name="action" value="add">
+                      <input type="hidden" name="type" value="reference document lead">
+                      <div class="row">
+                         <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                               <label class="control-label">Name</label>
+                               <input type="text" placeholder="Name" class="form-control" id="name" name="name" value="" >
+                            </div>
+                         </div>
+                         <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                               <label class="control-label">Email</label>
+                               <input type="email" placeholder="Email" class="form-control" id="email" name="email" value="" >
+                            </div>
+                         </div>
+                         <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                               <label class="control-label">Mobile No</label>
+                               <input type="text" placeholder="Mobile No" class="form-control" id="mobile" name="mobile" value="">
+                            </div>
+                         </div>
+                         <button id="submit" type="submit" class="btn btn-primary text-weight-700 text-uppercase" >Submit</button>
+                      </div>
+                      
+                   </form>
+                </div>
+             </div>
+          </div>
+          
+       </div>
+    </div>
+ </div>
 <!--</section>-->
 <footer>
 		
@@ -684,10 +739,12 @@ gtag('config', 'AW-1028772118');
         	<i class="fa fa-angle-up"></i>
         </a>
 
-         <script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+         <!-- <script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+         <script type="text/javascript" src="wp-content/themes/geebee-world/js/jquery.min.js"></script>
+         <script type="text/javascript" src="wp-content/themes/geebee-world/js/jquery.validate.js"></script>
 		 <script src="wp-content/themes/geebee-world/owlcarousel/owl.carousel.min.js"></script>
          <script type='text/javascript' src='wp-content/plugins/widget-google-reviews/static/js/wpac-time544c.js?ver=1.6.9'></script>
-<script type='text/javascript' src='wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<!-- <script type='text/javascript' src='wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script> -->
 <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
 <script type='text/javascript' src='wp-content/plugins/collapsing-category-list/js/dropdown5010.js?ver=4.9.8'></script>
 <script type='text/javascript' src='wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min26ce.js?ver=5.4.7.4'></script>
@@ -731,47 +788,114 @@ var strongControllerParms = {"initializeOn":"documentReady","method":"","univers
 			</script>
 					 </div>
 		 <script>
-			 jQuery(document).ready(function($){
-			 	var pageURL = $(location).attr("href");
-			 	var Field115 = $('.wufoo-form-container').attr('src');
-			 	console.log(pageURL);
-			 	console.log("Field115 = "+Field115);
+			 // jQuery(document).ready(function($){
+			 // 	var pageURL = $(location).attr("href");
+			 // 	var Field115 = $('.wufoo-form-container').attr('src');
+			 // 	console.log(pageURL);
+			 // 	console.log("Field115 = "+Field115);
 
-			 	// console.log(Field115);
+			 // 	// console.log(Field115);
 
-				$(".accordion_example2").smk_Accordion({
-				closeAble: true, //boolean
-				});
+				// $(".accordion_example2").smk_Accordion({
+				// closeAble: true, //boolean
+				// });
 
-				});
-				$(".menu-item").on('click', function(){
-					$(this).find('.sub-menu').toggle();
-				})
-				$('.owl-carousel').owlCarousel({
-					navigation : true,
-                    slideSpeed : 300,
-                    paginationSpeed : 400,
-                    pagination: false,
-                    singleItem : false,
-                    items : 3,
-					responsive:{
-						0:{
-							items:1
-						},
-						600:{
-							items:3
-						},
-						1000:{
-							items:3
-						},
-						1200:{
-							items:3
-						}
-					}
-				})
+				// });
+				// $(".menu-item").on('click', function(){
+				// 	$(this).find('.sub-menu').toggle();
+				// })
+				// $('.owl-carousel').owlCarousel({
+				// 	navigation : true,
+    //                 slideSpeed : 300,
+    //                 paginationSpeed : 400,
+    //                 pagination: false,
+    //                 singleItem : false,
+    //                 items : 3,
+				// 	responsive:{
+				// 		0:{
+				// 			items:1
+				// 		},
+				// 		600:{
+				// 			items:3
+				// 		},
+				// 		1000:{
+				// 			items:3
+				// 		},
+				// 		1200:{
+				// 			items:3
+				// 		}
+				// 	}
+				// })
 			 
-			
+			var $=jQuery.noConflict();
+            // window.onload = function() {
+            // if (window.jQuery) {  
+            // // jQuery is loaded  
+            //     alert("Yeah!");
+            // } 
+            // else {
+            // // jQuery is not loaded
+            //     alert("Doesn't Work");
+            // }
+            // }
+            $(window).on('load',function(){
+                $('#viewpdf').modal('show');
+            });
+            $('#viewpdf').on('shown.bs.modal', function(event) {
+                            // alert("modal ready");
+                            // var button = $(event.relatedTarget);// Button that triggered the modal
+                            // var button_id = button.data('id');
+                            // alert(button_id);
+                            // $('#viewpdf').data('val', button_id);
+                            $('#formpdf').validate({ // initialize the plugin
+                                    rules: {
+                                        name: {
+                                            required: true,
+                                            minlength: 2
+                                        },
+                                        email: {
+                                            required: true,
+                                            email: true
+                                        },
+                                        mobile: {
+                                            required: true,
+                                            number: true,
+                                            minlength: 10
+                                        }
+                                    },
+                                    submitHandler: function (form) { // for demo
+                                        // alert('valid form submitted');
+                                        // alert($("#name").val());
+                                        $.ajax({
+                                            url: "contact-process-test.php",
+                                            type: 'POST',
+                                            data: {
+                                                name: $("#name").val(),
+                                                email: $("#email").val(),
+                                                mobile: $("#mobile").val()
+                                            },
+                                            success: function(msg) {
+                                                // alert('Email Sent');
+                                                // pdf_id = $('#viewpdf').data('val');
+                                                // alert(pdf_id);
+                                                // alert(button_id);
+                                                // link = $(pdf_id).data('href');
+                                                // alert(link);
+                                                // $(pdf_id).attr("target", "_blank");
+                                                // $(pdf_id).attr("data-target", "");
+                                                // $(pdf_id).attr("data-href", "");
+                                                // $(pdf_id).attr("href", link);
+                                                $('#viewpdf').modal('toggle');
+                                                // window.open($(pdf_id).attr("href"), '_blank');
+                                                // $("#text").html("Bye");
+                                            }               
+                                        }); // for demo
+                                        return false; // for demo
+                                    }
+                            })
+
+                        });
 		 </script>
       </body>
    
-</html>
+</html>-

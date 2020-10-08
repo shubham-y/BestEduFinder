@@ -1,6 +1,6 @@
 <?php
 
-$myemail = 'info@apexstudent.com';
+$myemail = '';
 $name = $_POST['name']; 
 $email_address = $_POST['email']; 
 $mobile = $_POST['mobile']; 

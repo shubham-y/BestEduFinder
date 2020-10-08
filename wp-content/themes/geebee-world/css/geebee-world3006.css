@@ -227,7 +227,7 @@ h4{font-weight:600; margin-bottom:10px;}
 .wpmslider-pager-item a.active{background:#253b80; color:#fff;}
 .testimonial-company{font-size:13px !important; font-style:italic;}
 
-.cd-top{display:inline-block; height:40px; width:40px; position:fixed; bottom:100px; border-radius:50%; right:32px; color:#fff !important; font-size:22px !important;background:#253B80; padding:2px 13px;display: none;}
+.cd-top{display:inline-block; height:40px; width:40px; position:fixed; bottom:50px; border-radius:50%; right:32px; color:#fff !important; font-size:22px !important;background:#253B80; padding:2px 13px;display: none;}
 .cd-top.cd-top--show,.cd-top.cd-top--fade-out,.cd-top:hover{-webkit-transition:opacity .3s 0s,visibility 0s 0s,background-color .3s 0s;transition:opacity .3s 0s,visibility 0s 0s,background-color .3s 0s}
 .cd-top.cd-top--show{visibility:visible;opacity:1;display: block !important;}
 .cd-top.cd-top--fade-out{opacity:1; z-index: 1000;}
